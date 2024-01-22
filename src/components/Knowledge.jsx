@@ -53,7 +53,7 @@ const Knowledge = () => {
       <div className="mt-7 flex justify-center">
         <hr className="w-72" />
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-3 bg-light-blue-500/50 p-5 mt-7 rounded-3xl">
+      <div className="flex flex-wrap justify-center items-center gap-3 bg-light-blue-500/50 p-5 mt-7 rounded-3xl border-cyan-200 border-solid border-4">
         {techList.map((tech) => {
           return (
             <LazyLoadImage

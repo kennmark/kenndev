@@ -48,7 +48,9 @@ const ContactUs = () => {
                 </div>
                 <div className="app-form-group buttons">
                   <button className="app-form-button">CANCEL</button>
-                  <button className="app-form-button">SEND</button>
+                  <a href="mailto:skyhex27@gmail.com">
+                    <button className="app-form-button">SEND</button>
+                  </a>
                 </div>
               </div>
             </div>
