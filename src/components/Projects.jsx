@@ -8,7 +8,11 @@ import {
   Button,
 } from '@material-tailwind/react'
 import Project1 from '../assets/images/project-1.webp'
+import REACT from '../assets/images/icons/react-logo.png'
+import MATERIAL from '../assets/images/icons/materialtailwind.png'
+import NODE from '../assets/images/icons/node-js.png'
 import GradientButton from './GradientButton'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Projects = () => {
   return (
@@ -20,8 +24,8 @@ const Projects = () => {
       </div>
       <div className="sm:flex gap-3">
         <div className="mt-14">
-          <Card className="mt-6 w-96">
-            <CardHeader color="blue-gray" className="relative h-56">
+          <Card className="mt-6 w-96 h-full" variant="gradient" color="gray">
+            <CardHeader color="blue-gray" className="relative h-auto">
               <img src={Project1} alt="card-image" />
             </CardHeader>
             <CardBody>
@@ -36,6 +40,12 @@ const Projects = () => {
                 . A guide for reliving regular and seasonal spirits, winged
                 light locations, map shrines and many more.
               </Typography>
+
+              <div className="flex flex-wrap justify-center items-center gap-2 mt-5">
+                <LazyLoadImage src={REACT} width={40} className="h-fit" />
+                <LazyLoadImage src={MATERIAL} width={40} className="h-fit" />
+                <LazyLoadImage src={NODE} width={40} className="h-fit" />
+              </div>
             </CardBody>
             <CardFooter className="pt-0">
               <a href="https://skykidguide.onrender.com/">
@@ -45,10 +55,10 @@ const Projects = () => {
           </Card>
         </div>
         <div className="mt-14">
-          <Card className="mt-6 w-96">
+          <Card className="mt-6 w-96 h-full">
             <CardHeader
               color="blue-gray"
-              className="relative h-56 flex items-center"
+              className="relative flex items-center h-auto pt-7 pb-7"
             >
               {/* <img src={Project1} alt="card-image" /> */}
               <h1>More Projects Soon...</h1>
