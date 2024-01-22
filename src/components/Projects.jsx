@@ -42,9 +42,9 @@ const Projects = () => {
               </Typography>
 
               <div className="flex flex-wrap justify-center items-center gap-2 mt-5">
-                <LazyLoadImage src={REACT} width={40} className="h-fit" />
-                <LazyLoadImage src={MATERIAL} width={40} className="h-fit" />
-                <LazyLoadImage src={NODE} width={40} className="h-fit" />
+                <LazyLoadImage src={REACT} width={40} className="h-full" />
+                <LazyLoadImage src={MATERIAL} width={40} className="h-full" />
+                <LazyLoadImage src={NODE} width={40} className="h-full" />
               </div>
             </CardBody>
             <CardFooter className="pt-0">

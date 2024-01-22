@@ -58,9 +58,10 @@ const Knowledge = () => {
           return (
             <LazyLoadImage
               alt={tech.label}
-              className="h-fit justify-end w-20 hover:motion-safe:animate-bounce"
+              className="h-full justify-end hover:motion-safe:animate-bounce"
               src={tech.imageUrl}
               key={tech.label}
+              width={80}
             />
           )
         })}
