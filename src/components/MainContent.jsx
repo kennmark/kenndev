@@ -5,7 +5,7 @@ import { Typography } from '@material-tailwind/react'
 import GradientButton from '../components/GradientButton'
 const MainContent = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-28">
       <LazyLoadImage
         src={KennDevLogo}
         width={350}
