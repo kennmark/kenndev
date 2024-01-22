@@ -47,7 +47,7 @@ const techList = [
 
 const Knowledge = () => {
   return (
-    <div className="mt-28">
+    <div className="mt-28 pl-8 pr-8">
       <h1>Knowledge</h1>
 
       <div className="mt-7 flex justify-center">

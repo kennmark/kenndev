@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <div className="background">
+    <div className="background pl-6 pr-6">
       <div className="container">
         <div className="screen">
           <div className="screen-header">
