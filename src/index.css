@@ -14,7 +14,13 @@ html {
 
   color-scheme: light dark;
   color: #a6e1fa;
-  background-color: #00072d;
+  /* background-color: #00072d; */
+  background: rgb(0, 7, 45);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 7, 45, 1) 40%,
+    rgba(0, 61, 134, 1) 100%
+  );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
