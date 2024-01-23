@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import screen from '../assets/images/og-image.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const ContactUs = () => {
   const emailRef = useRef(HTMLInputElement)
@@ -30,6 +32,7 @@ const ContactUs = () => {
 
   return (
     <div className="background pl-6 pr-6">
+      {/* <LazyLoadImage src={screen}/> */}
       <div className="container">
         <div className="screen">
           <div className="screen-header">
