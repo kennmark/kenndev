@@ -24,7 +24,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-3">
         <div className="mt-14">
-          <Card className="mt-6 w-96 h-full" variant="gradient" color="gray">
+          <Card className="mt-6 w-96 h-full" variant="gradient" color="blue">
             <CardHeader color="blue-gray" className="relative h-auto">
               <img src={Project1} alt="card-image" />
             </CardHeader>

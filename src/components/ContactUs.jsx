@@ -1,6 +1,33 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const ContactUs = () => {
+  const emailRef = useRef(HTMLInputElement)
+  const nameRef = useRef(HTMLInputElement)
+  const messageRef = useRef(HTMLInputElement)
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => emailjs.init('L_hK3D4hFHHaDXF_p'), [])
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const serviceId = 'service_wu3dw12'
+    const templateId = 'template_qt5qcm8'
+    try {
+      setLoading(true)
+      await emailjs.send(serviceId, templateId, {
+        name: nameRef.current.value,
+        recipient: emailRef.current.value,
+        message: messageRef.current.value,
+      })
+      alert('email successfully sent!')
+    } catch (error) {
+      console.log(error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <div className="background pl-6 pr-6">
       <div className="container">
@@ -25,35 +52,42 @@ const ContactUs = () => {
               </div>
               <div className="app-contact">CONTACT INFO : +639 856 7690</div>
             </div>
-            <div className="screen-body-item">
+            <form className="screen-body-item" onSubmit={handleSubmit}>
               <div className="app-form">
                 <div className="app-form-group">
                   <input
                     className="app-form-control"
                     placeholder="NAME"
-                    value="Kenn Mark Sabalberino"
+                    ref={nameRef}
                   />
-                </div>
-                <div className="app-form-group">
-                  <input className="app-form-control" placeholder="EMAIL" />
                 </div>
                 <div className="app-form-group">
                   <input
                     className="app-form-control"
-                    placeholder="CONTACT NO"
+                    placeholder="EMAIL"
+                    ref={emailRef}
                   />
                 </div>
+                {/* <div className="app-form-group">
+                    <input
+                      className="app-form-control"
+                      placeholder="CONTACT NO"
+                    />
+                  </div> */}
                 <div className="app-form-group message">
-                  <input className="app-form-control" placeholder="MESSAGE" />
+                  <input
+                    className="app-form-control"
+                    placeholder="MESSAGE"
+                    ref={messageRef}
+                  />
                 </div>
                 <div className="app-form-group buttons">
-                  <button className="app-form-button">CANCEL</button>
-                  <a href="mailto:skyhex27@gmail.com">
-                    <button className="app-form-button">SEND</button>
-                  </a>
+                  <button className="app-form-button" disabled={loading}>
+                    SEND
+                  </button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
