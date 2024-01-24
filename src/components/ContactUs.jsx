@@ -53,7 +53,7 @@ const ContactUs = () => {
                 <span>CONTACT</span>
                 <span>US</span>
               </div>
-              <div className="app-contact">CONTACT INFO : +639 856 7690</div>
+              <div className="app-contact">CONTACT INFO : +63968 856 7690</div>
             </div>
             <form className="screen-body-item" onSubmit={handleSubmit}>
               <div className="app-form">
