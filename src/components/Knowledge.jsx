@@ -8,6 +8,8 @@ import REACT from '../assets/images/icons/react-logo.png'
 import NODE from '../assets/images/icons/node-js.png'
 import TAILWIND from '../assets/images/icons/tailwindcss.png'
 import MATERIAL from '../assets/images/icons/materialtailwind.png'
+import MONGODB from '../assets/images/icons/mongodb.png'
+import TYPESCRIPT from '../assets/images/icons/typescript.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const techList = [
@@ -32,6 +34,10 @@ const techList = [
     imageUrl: REACT,
   },
   {
+    label: 'react',
+    imageUrl: TYPESCRIPT,
+  },
+  {
     label: 'node',
     imageUrl: NODE,
   },
@@ -42,6 +48,10 @@ const techList = [
   {
     label: 'material',
     imageUrl: MATERIAL,
+  },
+  {
+    label: 'mongodb',
+    imageUrl: MONGODB,
   },
 ]
 
