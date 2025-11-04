@@ -50,8 +50,7 @@ const ContactUs = () => {
           <div className="screen-body">
             <div className="screen-body-item left">
               <div className="app-title">
-                <span>CONTACT</span>
-                <span>US</span>
+                <span>Message Me</span>
               </div>
               <div className="app-contact">CONTACT INFO : +63968 856 7690</div>
             </div>

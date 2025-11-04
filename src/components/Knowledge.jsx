@@ -64,13 +64,13 @@ const Knowledge = () => {
         <hr className="w-72" />
       </div>
       <div className="flex flex-wrap justify-center items-center gap-3 bg-light-blue-500/50 p-5 mt-7 rounded-3xl border-cyan-200 border-solid border-4">
-        {techList.map((tech) => {
+        {techList.map((tech, index) => {
           return (
             <LazyLoadImage
               alt={tech.label}
-              className="h-full justify-end hover:motion-safe:animate-bounce"
+              className="h-full justify-end"
               src={tech.imageUrl}
-              key={tech.label}
+              key={index}
               width={80}
             />
           )

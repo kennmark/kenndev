@@ -20,7 +20,7 @@ const MainContent = () => {
           Kenn Mark Sabalberino
         </Typography>
         <h1 className="font-black text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-500 to-light-blue-500">
-          Web Developer.
+          Web Developer . Cybersecurity Enthusiast
         </h1>
         <Typography color="white" className="mb-3 mt-3">
           Passionate in Web Application focuses on ReactJS development.
