@@ -103,10 +103,7 @@ const Projects = () => {
               </div>
             </CardBody>
             <CardFooter className="pt-0">
-              <a
-                href="https://mern-booking-app-x2mj.onrender.com/"
-                target="_blank"
-              >
+              <a href="https://kerussobiblecommunity.com/" target="_blank">
                 <GradientButton label="Visit Site" />
               </a>
             </CardFooter>
